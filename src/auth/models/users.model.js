@@ -1,7 +1,8 @@
 'use strict';
 
 // Create a Sequelize model
-const Users = (sequelize, DataTypes) => { sequelize.define('User', {
+const UserSchema = (sequelize, DataTypes) =>
+sequelize.define('lab06-User', {
     username: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -11,5 +12,9 @@ const Users = (sequelize, DataTypes) => { sequelize.define('User', {
       allowNull: false,
     }
   });
-}
-module.exports= Users;
+
+
+
+
+
+module.exports= UserSchema;
